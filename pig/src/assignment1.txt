@@ -1,0 +1,115 @@
+
+*** Assignment 1 The Pig game ***
+
+We are going to implement the dice game "Pig".
+See http://en.wikipedia.org/wiki/Pig_%28dice_game%29
+
+1.  The game should run inside the program() method (calling other methods from there)
+    See below for a run of the game. Some methods are already implemented, use if you like.
+    There is also a class for Players. You must use it (possible add a constructor later).
+
+    If new to programming you should work iteratively
+    - Find smallest possible step towards the solution, run it!
+    - Work inside out, if you are able to do it once, put a loop around for many times
+    - Use hard coded data temporarily
+    - If steps complex use functional decomposition (and testing)
+
+    General quality
+    - Implement and test logical methods, see call to test() first in program()
+    - Make a clear separation of IO methods and game logic methods
+
+    A run of the game:
+
+    Welcome to PIG!
+    First player to get 20 points will win!
+    Commands are: r = roll , n = next, q = quit
+
+    How many players? > 2         (could be more...)
+    Name for player 1 > olle
+    Name for player 2 > fia
+    Points: olle = 0 fia = 0
+    Player is olle > r
+    Got 6 running total are 6
+    Player is olle > r
+    Got 6 running total are 12
+    Player is olle > r
+    Got 3 running total are 15
+    Player is olle > r
+    Got 1 lost it all!
+    Points: olle = 0 fia = 0
+    Player is fia > r
+    Got 2 running total are 2
+    Player is fia > r
+    Got 1 lost it all!
+    Points: olle = 0 fia = 0
+    Player is olle > r
+    Got 2 running total are 2
+    Player is olle > r
+    Got 2 running total are 4
+    Player is olle > r
+    Got 1 lost it all!
+    Points: olle = 0 fia = 0
+    Player is fia > r
+    Got 5 running total are 5
+    Player is fia > r
+    Got 3 running total are 8
+    Player is fia > n
+    Points: olle = 0 fia = 8
+    Player is olle > r
+    Got 6 running total are 6
+    Player is olle > r
+    Got 3 running total are 9
+    Player is olle > n
+    Points: olle = 9 fia = 8
+    Player is fia > r
+    Got 1 lost it all!
+    Points: olle = 9 fia = 8
+    Player is olle > r
+    Got 1 lost it all!
+    Points: olle = 9 fia = 8
+    Player is fia > r
+    Got 2 running total are 2
+    Player is fia > r
+    Got 5 running total are 7
+    Player is fia > r
+    Got 6 running total are 13
+    Game over! Winner is player fia with 21 points (if q chosen prints: Game aborted)
+
+2. (Optional). Add a computer player (AI) to the program. A simple approach i just to name
+    some player "computer". More complex solution would be to create a class for the Computer
+    (possibly exchange a computer player with someone else's and let them play against each other).
+    Make a copy of the existing program and continue from there.
+
+    A run of program might look like:
+
+    Welcome to PIG!
+    First player to get 20 points will win!
+    Commands are: r = roll , n = next, q = quit
+
+    How many players? > 2
+    Name for player 1 > olle
+    Name for player 2 > fia
+    Points: computer = 0 olle = 0 fia = 0
+    Player is fia > r
+    Got 3 running total are 3
+    Player is fia > n
+    Points: computer = 0 olle = 0 fia = 3
+    Player is computer
+    computer choose: r
+    Got 5 running total are 5
+    Player is computer
+    computer choose: r
+    Got 2 running total are 7
+    Player is computer
+    computer choose: n
+    Points: computer = 7 olle = 0 fia = 3
+    Player is olle > r
+    Got 6 running total are 6
+    Player is olle > n
+    Points: computer = 7 olle = 6 fia = 3
+    Player is fia > r
+    Got 2 running total are 2
+    etc...
+
+
+
